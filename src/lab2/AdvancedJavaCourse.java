@@ -1,5 +1,7 @@
 package lab2;
 
+import lab1.Course;
+
 import javax.swing.*;
 
 /**
@@ -8,7 +10,7 @@ import javax.swing.*;
  * @author your name goes here
  * @version 1.00
  */
-public class AdvancedJavaCourse {
+public class AdvancedJavaCourse implements CourseInfo {
 
     private String courseName;
     private String courseNumber;

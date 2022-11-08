@@ -8,14 +8,16 @@ import javax.swing.*;
  * @author your name goes here
  * @version 1.00
  */
-public class AdvancedJavaCourse {
+public class AdvancedJavaCourse extends Course {
 
     String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
 
-    public AdvancedJavaCourse(String courseName, String courseNumber) {
+    public AdvancedJavaCourse(String courseName, double credits , String courseNumber) {
+        super(courseNumber, 3, courseName);
+        this.setCredits(credits);
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
     }
@@ -48,14 +50,14 @@ public class AdvancedJavaCourse {
         }
         this.prerequisites = prerequisites;
     }
-
+    @Override
     public void setCredits(double credits) {
         if (credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
                     "Error: credits must be in the range 0.5 to 4.0");
             System.exit(0);
         }
-        this.setCredits(credits);
+        //this.setCredits(credits);
     }
 
 }

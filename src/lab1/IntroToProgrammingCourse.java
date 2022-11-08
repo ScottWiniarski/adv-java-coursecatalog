@@ -9,13 +9,14 @@ import javax.swing.*;
  * @author your name goes here
  * @version 1.00
  */
-public class IntroToProgrammingCourse {
+public class IntroToProgrammingCourse extends Course {
 
     String courseNumber;
     private String courseName;
     private double credits;
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
+        super(courseNumber, 3, courseName);
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
     }

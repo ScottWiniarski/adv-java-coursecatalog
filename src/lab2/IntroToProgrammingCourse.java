@@ -8,7 +8,7 @@ import javax.swing.*;
  * @author your name goes here
  * @version 1.00
  */
-public class IntroToProgrammingCourse {
+public class IntroToProgrammingCourse implements CourseInfo {
 
     private String courseName;
     private String courseNumber;
@@ -23,7 +23,7 @@ public class IntroToProgrammingCourse {
         return courseName;
     }
 
-    public final void setCourseName(String courseName) {
+    public void setCourseName(String courseName) {
         if (courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseName cannot be null of empty string");
