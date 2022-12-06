@@ -11,7 +11,7 @@ public class Main {
         System.out.println(course.getCourseName());
 
         Course course2 = new IntroJavaCourse(name, credits ,number);
-        //course2.setCredits(4);
+        course2.setCredits(4);
 
         System.out.println(course2.getCredits());
 
